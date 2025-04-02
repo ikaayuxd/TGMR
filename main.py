@@ -55,7 +55,7 @@ def control(proxy, proxy_type, username):
     url = 'https://telegram.org/support'
     try:
         # Step 1: Send initial request and store cookies
-        response = requests.get(url, proxies={'http': f'{proxy_type}://{proxy}33335', 'https': f'{proxy_type}://{proxy}33335'}, timeout=time_out)
+        response = requests.get(url, proxies={'http': f'{proxy_type}://{proxy}:33335', 'https': f'{proxy_type}://{proxy}:33335'}, timeout=time_out)
     except AttributeError:
         error_count += 1
         pass
